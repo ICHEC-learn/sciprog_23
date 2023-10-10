@@ -18,10 +18,11 @@ int main(void) {
     h = (b - a) / (N - 1);          // Create 11 equidistants points
 
     value = 2 * (tan(a) + tan(b));  
-    for (i=0; i < N; i++);          // for loop from 0 to N
-        value += tan(a+h*(i-1));
+
+    for (i=1; i < N; i++);          // for loop from 0 to N
+        value += tan(a+h*(i));
     
 /* Print the values */
-    printf("The area under the curve is equal to %f \n", value);
+    printf("The area under the curve is equal to %f \n", value/2);
     printf("The value of log(2) is equal to : %f", log2);
 }
