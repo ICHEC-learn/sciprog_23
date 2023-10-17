@@ -1,4 +1,4 @@
-# Scientific Programming Concepts PH502/ACM40660 Autumn 2023
+# Scientific Programming Concepts PH502/ACM40660 Autumn 2023 - TEST
 
 For this assignment, you need to have an account on *[GitHub.com](https://github.com)*. After logged in to your account, fork this repository into your github account. From there; 
 
