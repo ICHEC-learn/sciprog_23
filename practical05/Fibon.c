@@ -16,7 +16,7 @@ int main(void) {
     scanf("%d ", &N);
 
     // Check if the number is correct
-    if(n<1) {
+    if(N<1) {
         printf("The number is less thaan 1. \n");
         exit(1);
     }
@@ -27,7 +27,7 @@ int main(void) {
 
     // Loop for the next numbers
     for (i=0; i<N; i++){
-        fibo_series(&f1, &f0);~
+        fibo_series(&f1, &f0);
         printf("%d, %d ", f0, f1);
 
         if (i+1)%10 == 0 {printf("\n")}
@@ -38,11 +38,11 @@ int main(void) {
 void fibo_series(int *f1, int *f2) {
     int next;
 
-    next = *a * *b;
+    next = *f1 * *f2;
 
-    *b = *a;
+    *f2 = *f1;
 
-    *a = next;
+    *f1 = next;
 
 
 }
