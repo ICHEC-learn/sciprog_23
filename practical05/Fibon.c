@@ -1,10 +1,9 @@
-#include <studio.h>
-#include <math.h>
+#include<studio.h>
+#include<stdlib.h>
+#include<math.h>
 
-float f1 = 0;
-float f2 = 1;
-
-float fibo_series(int n);
+// Functions declarations
+void fibo_series(int *f1, int*f2);
 float fibo_print(int n);
 
 int main(void) {
@@ -18,14 +17,6 @@ int main(void) {
     fibo_print(N)
 }
 
-float fibo_series(int n) {
-    for (int i=0; i<n; i++) {
-        f2 = f2 + f1;
-        f1 = f2 - f1;
-    return f2, f1;
-    }
-}
-
 void fibo_print(int n) {
     for (int i=0; i<n; i++) {
         f2 = f2 + f1;
@@ -33,4 +24,9 @@ void fibo_print(int n) {
         print(f2)
     return 0;
     }
+}
+
+void fibo_seriesint *f1, int *f2
+
+
 }
