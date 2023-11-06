@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/boris/Documents/GitHub/sciprog_23/practical05",
-      "program": "/home/boris/Documents/GitHub/sciprog_23/practical05/build/Debug/outDebug",
+      "cwd": "/home/boris/Documents/GitHub/sciprog_23/assignment1",
+      "program": "/home/boris/Documents/GitHub/sciprog_23/assignment1/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
