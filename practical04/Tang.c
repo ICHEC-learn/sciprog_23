@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
+
 // Global variables
 const int N = 12;
-double TanVal[N];
+double TanVal[13];
 
 // Functions
 double degtorad(double deg);
-double traprule(int N);
+double traprule(int n);
 
 int main(void) {
-
     int i;
     double degang, radang = 0;
 
-    for(i=0; i<=N; i++) {
+    for (i = 0; i < N; i++) {
         degang = i * 5.0;
         radang = degtorad(degang);
         TanVal[i] = tan(radang);
@@ -27,27 +27,27 @@ int main(void) {
     printf("The exact value is : %lf\n", integ_exact);
     printf("The difference between the two values is : %lf\n", integ_approx-integ_exact);
 
+
     return 0;
 }
 
-    // Function to convert angle from degrees to radians
+// Function to convert angle from degrees to radians
 double degtorad(double deg) {
-    return( (M_PI * deg)/180.0);
+    return (M_PI * deg) / 180.0;
 }
 
-double traprule(int n) {
+double traprule(int N) {
     // Declare variables
     int i = 0;
     double width = 0;
     double area = TanVal[0] + TanVal[N];
 
-    for (i=0; i<n; i++) {
-        area += 2 * TanVal[i];
+    for (i = 1; i < N; i++) {
+        area += 2. * TanVal[i];
     }
 
-    width = degtorad((60.0-0.)/(2.*N));
+    width = degtorad(60.0) / (2.0 * N);
     area *= width;
 
     return area;
 }
-
