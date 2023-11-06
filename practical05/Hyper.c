@@ -2,64 +2,52 @@
 #include <math.h>
 
 // Functions declarations
-arctanh1(const double x, const double delta);
-arctanh2(const double x);
+double arctanh1(const double x, const double delta);
+double arctanh2(const double x);
 
 
 int main(void) {
 
     // Variables declarations
-    // float iter = (0.9 - (-0.9))/0.01;
-    //double T1[(int)iter], T2[(int)inter];
-    double delta, x;
-    int lenght=1000;
-    int N = 1000
+    double delta, x = -0.9;
+    int N = 1000;
     double T1[N], T2[N];
+    int j = 0;
+
 
     // User Input for delta
     printf("Enter the precision for the MacLaurin Series\n");
-    scanf("%1f ", &delta);
+    scanf("%lf", &delta);
 
-    int j=0; // array index
-    x = -0.9 ;
-    while (x<=0.9 && j < lenght) {
-        tan1[j] = arctanh1(x, delta);
-        tan2[j] = arctanh2(x)
-        print("The difference at x=%lf between them is %.10lf.
+    while (x<=0.9 && j < N) {
+        T1[j] = arctanh1(x, delta);
+        T2[j] = arctanh2(x);
+        printf("The difference at x=%lf between them is %.10lf.\n", x, fabs(T1[j]-T2[j]));
+        x += 0.01;
+        j++;
     }
-
-
-
-
-
 
     return 0;
 
 }
 
-arctanh1(const double x, const double delta) {
+double arctanh1(const double x, const double delta) {
     double sum = 0;
-    double elem, val;
-    int n;
+    double elem, value;
+    int n = 0;
 
     do {
-        val = 2*n+1;
-        elem = pow(x,val)/val;
+        value = 2 * n + 1;
+        elem = pow(x,value) / value;
         sum += elem;
         n++;
 
-    } while(fabs(elem) > delta)
+    } while(fabs(elem) >= delta);
 
     return sum;
 }
 
-arctanh2(const double x) {
-    double value;
-    value = 0.5*(log(1+x)-log(1-x));
-    return value;
-
+double arctanh2(const double x) {
+    return 0.5*(log(1+x)-log(1-x));
 }
-
-
-
 
