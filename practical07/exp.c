@@ -21,7 +21,7 @@ int main(void) {
     }
 
     for (i=0; i<order; i++) {
-
+        e += terms[i];
     }
 
 
