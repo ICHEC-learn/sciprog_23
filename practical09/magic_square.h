@@ -19,9 +19,9 @@ int isMagicSquare(int ** square, const int n) {
     // and the main and secondary diagonals
     int M = (n * (n*n + 1))/2;
 
-    int sum1 = 0, sum2 = 0, sum3 = 0;
+    int sum1 = 0;
     int i, j;
-    // TODO: Checking that every row and column add up to M
+    // Checking that every row and column add up to M
     for (i=0; i<n; i++) {
         for (j=0; j<n; j++) {
             sum1 += square[i][j];
@@ -29,27 +29,19 @@ int isMagicSquare(int ** square, const int n) {
         if (sum1 != M) {
             return 0;
         }
+        sum1 = 0;  // Reset sum1 for the next row/column
     }
 
-    // TODO: Checking that the main and secondary
+    // Checking that the main and secondary
     // diagonals each add up to M
     // If passed all checks, it is a magic square
-    sum = 0;
-    for (i=0; i<n; i++) {
-        for (j=0; j<n; j++) {
-            if (i==j) {
-                sum2 += square[i][j];
-            }
-            if (i+j == n-1) {
-                sum3 += square[i][j];
-            }
-        }
+    int sum2 = 0, sum3 = 0;
+    for (i = 0; i < n; i++) {
+        sum2 += square[i][i];
+        sum3 += square[i][n - 1 - i];
     }
-    if (sum2 != M) {
-            return 0;
-    }
-    if (sum3 != M) {
-            return 0;
+    if (sum2 != M || sum3 != M) {
+        return 0;
     }
     return 1;
 }

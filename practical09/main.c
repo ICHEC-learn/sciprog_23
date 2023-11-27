@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define MAX_FILE_NAME 100
 #include "magic_square.h"
+
+#define MAX_FILE_NAME 100
 
 int getlines(char filename[MAX_FILE_NAME]);
 
@@ -10,20 +11,21 @@ int main(){
     //define our file variable
     FILE *f;  
     char filename[MAX_FILE_NAME];
+
     printf("Enter file name: ");
     scanf("%s", filename);
     
-    // ##! n function which gets the number of lines
+    // n function which gets the number of lines
     int n = getlines(filename);
 
-    // TODO: Open the file
+    // Open the file
     f = fopen(filename, "r");
     if (f == NULL) {
-        printf("Can't open the file");
+        printf("Error : Can't open the file\n");
         exit(1);
     }
 
-    // TODO: Allocating a matrix for storing the magic square
+    // Allocating a matrix for storing the magic square
     // as an array of pointers, where each pointer is a row 
     int i;
     int **magicSquare = malloc(n*sizeof(int*));
@@ -31,14 +33,14 @@ int main(){
         magicSquare[i] = malloc(n*sizeof(int));
     }
 
-    // TODO:inputting integer data into the matrix;
+    // Inputting integer data into the matrix;
     int j;
     for(i=0; i<n; i++) {
         for(j=0; j<n; j++) {
             fscanf(f, "%d", &magicSquare[i][j]);
             printf("%d\t", magicSquare[i][j]);
         }
-    printf("\n");
+        printf("\n");
     }
     printf("This square %s magic\n", isMagicSquare(magicSquare,n)? "is" : "isNOT");
 
