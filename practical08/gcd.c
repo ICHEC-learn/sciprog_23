@@ -4,7 +4,8 @@
 
 
 bool areint(int x, int y);
-int gcd(int x, int y);
+int iteration_gcd(int x, int y);
+int recursive_gcd(int x, int y);
 
 int main() {
     int a, b, temp;
@@ -17,11 +18,13 @@ int main() {
         printf("The numbers given are not integers");
     }
 
-    printf("GCD between %d, and %d, is : %d \n", a, b, gcd(a,b));
+    printf("Using iteration, GCD between %d, and %d, is : %d \n", a, b, iteration_gcd(a,b));
+	printf("Using recursion, GCD between %d, and %d, is : %d \n", a, b, recursive_gcd(a,b));
+
 }
 
 
-int gcd(int x, int y) {
+int iteration_gcd(int x, int y) {
     int temp;
 
     do {
@@ -33,7 +36,20 @@ int gcd(int x, int y) {
     return x;
 }
 
+int recursive_gcd(int x, int y) {
+	if (y == 0) {
+		return x;
+	}
+	
+	else {
+		recursive_gcd(b, a%b);
+	}
+}
+
+
 
 bool areint(int x, int y) {
     return true;
 }
+
+
