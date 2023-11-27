@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 // Function declarations
-void fibo_seq(int *f1, int *f2);
+void generateNextFibonacciNumber(int *current, int *previous);
 
 int main(void) {
-    // Variable declarations
-    int N, i;
+    // Variable declarations and initialization
+    int N = 0;  // Initialize to a default value
+    int i = 0;
     int f0 = 0, f1 = 1;
 
     // Enter a number, loop until the number is less than or equal to 1
@@ -16,15 +17,17 @@ int main(void) {
 
     // Print the first two initial numbers
     printf("The Fibonacci sequence is:\n");
-    printf("%d, %d ", f0, f1);
+    printf("%d, %d, ", f0, f1);
 
     // Loop for generating the next numbers
     for (i = 2; i < N; i++) {
-        fibo_seq(&f1, &f0);
-        printf("%d, ", f1);
+        generateFibonacci(&f1, &f0);
+        printf("%d", f1);
 
         if (i % 10 == 0) {
-            printf("\n");  // Add a line break every 10 numbers
+            printf("\n");
+        } else {
+            printf(", ");
         }
     }
 
@@ -33,9 +36,9 @@ int main(void) {
     return 0;
 }
 
-// Function to generate the next number in the Fibonacci sequence
-void fibo_seq(int *f1, int *f2) {
-    int tmp = *f1 + *f2;
-    *f2 = *f1;
-    *f1 = tmp;
+// Function next Fibonacci number
+void generateFibonacci(int *current, int *previous) {
+    int tmp = *current + *previous;
+    *previous = *current;
+    *current = tmp;
 }

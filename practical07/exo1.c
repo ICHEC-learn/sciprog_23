@@ -10,7 +10,7 @@ int main(void) {
 
     printf("Enter the required polynomial order\n");
     if (scanf("%d", &order) !=1) {
-        printf("Did not enter a number \n");
+        printf("Error : Did not enter a number \n");
         return 1;
     }
 
@@ -24,16 +24,20 @@ int main(void) {
 
     free(terms);
 
-    printf("e is estimated as %.10lf, with difference %e \n", e, e-exp(1.0));
+    printf("e is estimated as %.10lf, with difference %e \n", e, e - exp(1.0));
 
     return 0;
 }
 
 int factorial(int n) {
     if(n < 0) {
-            printf("Error: Megative number passed to factorial");
-            return(-1);
+            printf("Error: Negative number passed to factorial");
+            return -1;
     }
-    else if(n==0) {return 1;}
-    else {return(n*factorial(n-1));}
+    else if(n==0) {
+        return 1;
+    }
+    else {
+        return(n*factorial(n-1));
+    }
 }
