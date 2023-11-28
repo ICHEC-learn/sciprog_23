@@ -1,28 +1,84 @@
-# Scientific Programming Concepts PH502/ACM40660 Autumn 2023
+# ReadMe
+This repository contains the practical for the module ACM40660 - Scientific Programming (ICHEC).
 
-For this assignment, you need to have an account on *[GitHub.com](https://github.com)*. After logged in to your account, fork this repository into your github account. From there; 
+## Practical03 
+### Print.c
+This file contains a simple code to print some variables using the function *printf*. The integers are printed using *%d* and the double using *%f*.
 
-- Clone the repo onto your local machine/sciprog using `git clone`
-- Create your own branch using `git branch` with the format `{FirstName}_{LastName}_{Brightspace/Canvas}`. Eg. `John_Smith_Brightspace`, then use `git checkout branch_name` to work on that branch
-- Create, edit and upload files using the `git add`, `commit` and `push` commands
-    - You will need to generate a “*[personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)*” to push changes to this repo. Follow the instructions in the link above carefully, and when prompted for username and password, use your “personal access token” as your password.
-    - For the duration of the semester you will need to update the repository regularly with the practical codes which will be covered in the live demo sessions on Tuesdays. Remember the differences between a local repository and the online version, so you will need to ‘push’ your changes rather than just committing them.
-    
-This assignment will contribute 20% of your total marks to this module, so to ensure that you get full marks;
+    gcc -o Print Print.c
+    ./Print
 
-- All practicals from Week 2 onwards should be included in the repo and the code from each practical should be able to be run and compiled (on sciprog) once cloned by another user. You can use your own solution or the material covered in the demos.
+### Area.c
+This file calculates the area under the curve for the function *tan(x)* using the Trapezodial rule.  A loop between the two values of interest is created using a small increment. It is possible to calculate the area more accuratly by reducing the increment, but the time of comutation will therefore be increased. The output value is compared with the real value of the area to ensure our calculation is correct. The command to compile this file changes slightly as we use some functions of the *math.h* library. 
 
-- Each practical is clearly commented and the repository should be well structured and laid out (i.e. have a folder for each practical). This includes having sufficient README markdown or .txt files explaining the contents of each folder, and instructions on how to use/run the programs (these do not need to be exhaustive, enough information so that the reader understands your code).
+    gcc -o Area Area.C -lm
+    ./Area
 
-- Although there is no “weekly deadline”, you should update this repo weekly following each practical with clear and concise commit messages.
+## Practical04
+### Tang.c 
+This file uses two functions to calculate the values of the tangeante of an angle. The first one converts degrees into radians.  The second uses the same method as Area.c file. The main part creates a loop over the range of angles we are interested in.
 
-- At the end, capture the output of the `git status` and `git log` commands ( eg. `git log > gitlog_output.txt` will write the output to a file called `gitlog_output.txt`), and **submit only these files to Brightspace/Canvas**. 
+	gcc -o Tang Tang.c -lm
+	./Tang
 
-We are looking for stepwise development by committing code (and comments) on a regular basis. Marks will be deducted for;
-- Not commenting your code and poorly maintained/updated repositories
-- Uploaded code does not compile/unable to run
-- Ambiguous commit messages
-- All-in-one commit/push (i.e. uploading everything at once)
-- This repository should only be used for the practical sessions covered in the live demo sessions ONLY. **Assignments 1 & 2 should not be added to the repo**. If the regular assignments are uploaded to your repository then you will receive 0% for this assignment.
+## Practical05 
+### Fibon.c
+This file calls a function to generate the next number in the Fibonnaci sequence. The main part let us enter a positive number *N*. If the number is not greater than 1, then we ask the user again. We then use our function to print each number of the sequence until the *N-th* element.
 
-There are plentiful resources on git introductions, such as https://guides.github.com/introduction/git-handbook/ 
+	gcc -o Fibon Fibon.c -lm
+	./Fibon
+	
+### Hyper.c	
+This file contains two method to calulate the values for inverse hyperbolic tangent function. The first one uses a loop over n elements until the value reaches a degree of accuracy set by the user. The second uses a formula using the natural logarithm. In the main part, we compare these two results by printing the values and the difference.
+
+	gcc -o Hyper Hyper.c -lm
+	./Hyper
+
+## Practical06 
+### Makefile
+This file contains informations to compile the next two file at the same time.
+	
+	make
+	make clean (to remove the unnecessary files)
+
+### matmult.c
+This file contains one function which reads three integers and three matrices. The matrices are the size of the three integers. We compute the matrix multiplucation of the third one using the first two.
+
+### main.c
+This file contains a main part which initialize the the values for three matrices using loops. It then calls the function created in the *matmult.c* file to compute the multiplication. The next three loops are used to print the three matrices.
+
+## Practical07
+### exp.c
+This file calcultes the approximate value of *e* using a loop and the factorial function. We use dynamical array in this sequence to change the value of the number of order of polynomials. It is essential to allocate memory for the pointers at the begining and free the memory allocated for this pointer.
+
+    gcc -o exp exp.c -lm
+    ./exp
+
+### array.c
+This file uses multiple function to modify the values inside a array using pointers. The first one allocates memory for the pointer. The second calls the array and fills its values with ones. The third prints the values of the array. The forth frees the memory of the pointer. All of the functions are called inside the main part.
+
+    gcc -o array array.c -lm
+    ./array
+
+## Practical08
+### gcd.c
+This file uses two functions to calculate the greatest common divisor between two numbers given by the user. The code does not stop asking for two number until they are integers using a function. The first one uses a loop. The second calls the same functions. They both stop once a condition is filled *b=0*. 
+
+    gcc gcd gcd.c -lm
+    ./gcd
+
+## Practical09 
+### magic_square_.txt
+This file contains a 3x3 magic square matrix.
+
+### not_magic_square.txt
+This file contains 3x3 matrix but it is not a magic square.
+
+### magic_square.h
+This file contains a function to check if a given matrix is magic or not. It first checks if the sum of the elements of each rows and columns are equal to the magic number. Then, it checks if the sum of the elements of the two diagonals are equal to the magic number.It returns one if all these conditions are passed. Returns zero otherwise. 
+
+### main.c
+This file opens the content of a given *.txt* file entered by the user. If the file does not exist, an error is printed. Memory is allocated to each row of the matrix. Loops are implemented to read each element of the file and store it inside pointers. The function defined in the other file is called and the results is printed. The memory is freed for each row corresponding to each pointer.
+
+    gcc -o main main.c -lm
+    ./main

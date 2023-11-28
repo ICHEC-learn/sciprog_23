@@ -5,7 +5,6 @@
 // The function takes as input a matrix 'square' and its side length 'n'
 // and outputs 0 if 'n' is negative or 'square' is NOT a magic square;
 // otherwise, outputs a non-zero value
-//
 
 
 int isMagicSquare(int ** square, const int n) {

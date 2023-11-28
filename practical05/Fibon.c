@@ -37,8 +37,8 @@ int main(void) {
 }
 
 // Function next Fibonacci number
-void generateFibonacci(int *current, int *previous) {
-    int tmp = *current + *previous;
-    *previous = *current;
-    *current = tmp;
+void generateFibonacci(int *a, int *b) {
+    int tmp = *a + *b;
+    *b = *a;
+    *a = tmp;
 }
