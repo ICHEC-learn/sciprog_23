@@ -1,0 +1,290 @@
+commit ee3d7ee8f2b0364e1e5f5e79e443554d9426597d
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Tue Nov 28 16:10:04 2023 +0000
+
+    Final Check
+
+commit 9622eea366a066c2edeeb7604218b41fb79d438b
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 27 20:56:13 2023 +0000
+
+    Final Check 3
+
+commit c678dadb6528a230759342d22529bcf71c635f55
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 27 20:23:20 2023 +0000
+
+    Final Check 2
+
+commit 5add7a395c50862809e283778313be89838a0b54
+Merge: 626948a d84c9fd
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 27 17:28:41 2023 +0000
+
+    Merge branch 'Boris_Morin_Brightspace' of https://github.com/BorisM202/sciprog_23 into Boris_Morin_Brightspace
+
+commit 626948af53589136b0f167d308b23fe199b0422b
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 27 17:28:38 2023 +0000
+
+    Final Check
+
+commit d84c9fdbc526719c8c5f3aaf32c1e31e0a6d8a41
+Merge: 9e63c81 54974c8
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Wed Nov 22 14:57:07 2023 +0000
+
+    Merge branch 'Boris_Morin_Brightspace' of https://github.com/BorisM202/sciprog_23 into Boris_Morin_Brightspace
+
+commit 54974c8ed3be7999ac385d228095aa88a92b1cac
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Nov 21 11:40:34 2023 +0000
+
+    Modified practical09
+
+commit 9473a3075766abb515cabff31d4e30a85989ecc5
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 20 13:32:22 2023 +0000
+
+    Begin practical09
+
+commit 9e63c811cea5792fa90f5a9b1ebe561645b59761
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Tue Nov 14 10:34:25 2023 +0000
+
+    Finished practical08
+
+commit 0b5ca0b2a5ae1d5ddd2cd3c9b787cdd7c5a5a835
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 13 18:34:43 2023 +0000
+
+    Finish practical08
+
+commit efe67b98ca88623e382333fa060a881b6ee6cca8
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 13 18:25:51 2023 +0000
+
+    Started Practical08
+
+commit e295febdcd302e69b2166e4878d083badefeb26c
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 13 17:23:17 2023 +0000
+
+    Finished practical07
+
+commit 06df4d10d91b8ebab9b14d13627b143ca0190fb6
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Nov 7 12:12:39 2023 +0000
+
+    Started Sxo2 of Practical07
+
+commit 81a83132014c062c8e8f3c6255e0d6ab00b4a317
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Nov 7 10:44:04 2023 +0000
+
+    Strated practical07
+    
+    Still some stuff to finish
+
+commit 49bab20a8673082967f320800d33c6199cb4b559
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 20:29:33 2023 +0000
+
+    Finished Practical05
+
+commit df9e870febdc4a8230de20e2f18765ad707f324a
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 19:43:46 2023 +0000
+
+    Finished Practical04
+
+commit e0c9d91a841a32fe13839b1dda57459a201437d2
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 19:30:47 2023 +0000
+
+    Change Practical04
+    
+    Still one compilation mistake
+
+commit d2b960743f72a298a37e6d8e7853e73b4143f1e7
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 18:57:31 2023 +0000
+
+    Change Practical03
+
+commit b294109db880625c6c3b76c8a18be48fc6efd4a4
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 15:33:08 2023 +0000
+
+    Exercises 1 and 2 of the assignment 1
+
+commit 422cd3a012fd0d18229a8fb77a02ce20bcc66acd
+Merge: 000ce03 4484ec3
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 10:41:26 2023 +0000
+
+    Merge branch 'Boris_Morin_Brightspace' of https://github.com/BorisM202/sciprog_23 into Boris_Morin_Brightspace
+
+commit 000ce030ba6d79073e5a62da2b28aa77a4014f1e
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Nov 6 10:40:55 2023 +0000
+
+    Creation File
+
+commit 4484ec30c8fe82f2d154c8540910ca5fb716a43c
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Nov 6 10:39:19 2023 +0000
+
+    VScode
+
+commit 816cee85cfea0772f6e8887203f8ea5eb2efc9f5
+Merge: 07655ca b182264
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Nov 6 10:38:54 2023 +0000
+
+    Merge branch 'Boris_Morin_Brightspace' of https://github.com/BorisM202/sciprog_23 into Boris_Morin_Brightspace
+
+commit 07655cae08408812f98f6bb3db456f3088442f9f
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Tue Oct 31 16:33:04 2023 +0000
+
+    Created Practical06 files
+
+commit b1822643195c0b89a523989490cd6c9c9e196748
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 24 11:49:36 2023 +0100
+
+    Modify practical05
+
+commit d03d6b5fdf5f69e4a4d2130d20c8a5222c8728c5
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 24 11:46:28 2023 +0100
+
+    Modifying practical05
+
+commit aec758d163e0c68022d5cf2e1e7b7fb5130e6850
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 24 11:16:26 2023 +0100
+
+    System Error
+
+commit 4baad2754d3a530ca64ddc1c47c35dbd2efd4db3
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 24 10:57:51 2023 +0100
+
+    Modifying practical05
+
+commit d9c2183b184f6e1e4c64c94886b369b74a0e0b2d
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 24 10:42:32 2023 +0100
+
+    Modifying practical05
+
+commit 9150fb614e8c5dc4cb93eeaccb63c6bc104baf3e
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Oct 23 18:07:57 2023 +0100
+
+    Continuing practical05
+
+commit 5cc033c8e8806ed23b8d04a8300168b6cc6020f2
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Oct 23 17:11:04 2023 +0100
+
+    Started Fibonacci Series
+
+commit cdac020d91651c292bf3d01ca30e53967683abda
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Oct 23 16:36:53 2023 +0100
+
+    Finished practical04
+
+commit f27d122191693d8ad8120788aeed2769cdc7661f
+Merge: dd02f4a dd8f1cb
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Oct 23 16:15:44 2023 +0100
+
+    Merge branch 'Boris_Morin_Brightspace' of https://github.com/BorisM202/sciprog_23 into Boris_Morin_Brightspace
+
+commit dd02f4a757de81bcc59e8b89387e6dec0aac8fcd
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Mon Oct 23 16:15:37 2023 +0100
+
+    Finished practical03
+
+commit dd8f1cb218b594851cf57a031327c64790f6d5b6
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Tue Oct 10 20:19:32 2023 +0100
+
+    Fixed the code so it does compile and find the right values. But cannot print the full array
+
+commit 7f31c3c4ec52901298b40cd037334dd802928c0e
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Tue Oct 10 09:09:22 2023 +0100
+
+    Comment and change loop
+
+commit 32340c84bbd57fc8d89d86c933c511b82d6c9209
+Author: BorisM202 <boris.morin@ucdconnect.ie>
+Date:   Tue Oct 10 08:56:10 2023 +0100
+
+    Print the value of log(2)
+
+commit ef9652c0e121ba14dc184c724f1697bc66ed6b99
+Author: BorisM202 <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Oct 9 18:51:35 2023 +0100
+
+    Beginning of tan evaluation
+
+commit e79a66603b116e4376e384ef7a406b586c6783f5
+Author: Boris Morin <145043616+BorisM202@users.noreply.github.com>
+Date:   Mon Oct 9 18:42:27 2023 +0100
+
+    Add files via upload
+
+commit 4692ab067f0770b5b6dfe670a77980159c9a4599
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Fri Sep 29 09:12:05 2023 +0100
+
+    Update README.md
+
+commit cd1f3539715bb7505a462bca3747943b77a36bab
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 15:55:04 2023 +0100
+
+    Update README.md
+
+commit fb2f93729881b2f90f310fc663cc6efd1073017b
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 15:54:24 2023 +0100
+
+    Update README.md
+
+commit f7edcd0c9b27b4274913af43d7b53b379b0ed4de
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 14:51:49 2023 +0100
+
+    Update README.md
+
+commit 26f18819fe128ba33aac685c327ab3769f7f1efe
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 13:45:54 2023 +0100
+
+    Update README.md
+
+commit 28f1724422f6823ce758640815d12816bd7a92f1
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 13:42:38 2023 +0100
+
+    Update README.md
+
+commit 12c68e1b6ee16ac5c4fe31c683f42e900b93d64e
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Thu Sep 28 13:41:56 2023 +0100
+
+    Update README.md
+
+commit 25cbd308e636fcc641d18f37f3d0dc139d953832
+Author: Buket Benek Gursoy <buket.gursoy@ichec.ie>
+Date:   Wed Sep 27 14:11:53 2023 +0100
+
+    Initial commit
